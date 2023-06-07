@@ -36,8 +36,6 @@ def start_button(client):
         return [
             [
                 InlineKeyboardButton(text="Cʜᴀɴɴᴇʟ-1", url=client.invitelink1),
-            ],
-            [
                 InlineKeyboardButton(text="Cʜᴀɴɴᴇʟ-2", url=client.invitelink2),
             ],
             [
