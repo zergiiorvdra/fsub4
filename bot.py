@@ -166,7 +166,7 @@ class Bot(Client):
 
         self.set_parse_mode("html")
         self.LOGGER(__name__).info(
-            f"[🔥 ZER FS 4 BERHASIL DIAKTIFKAN! 🔥]\n\nBOT Dibuat oleh @{OWNER}\nJika @{OWNER} Membutuhkan Bantuan, Silahkan Tanyakan di Grup https://t.me/mutualan_cari_teman_virtual"
+            f"[🔥 BERHASIL DIAKTIFKAN! 🔥]\n\nBOT Dibuat oleh @{OWNER}\nJika @{OWNER} Membutuhkan Bantuan, Silahkan Tanyakan di Grup https://t.me/mutualan_cari_teman_virtual"
         )
 
     async def stop(self, *args):
