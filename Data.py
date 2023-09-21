@@ -39,8 +39,8 @@ class Data:
 @{} adalah Bot Telegram untuk menyimpan Postingan atau File yang dapat Diakses melalui Link Khusus.
 
  • Creator: @{}
- • Source Code: <a href='https://github.com/mrismanaziz/File-Sharing-Man'>File-Sharing-Man v4</a>
+ • Source Code: <a href='https://github.com/zergiiorvdra/fsub4'>Zer-FileSharing 4</a>
  • Owner Repo: @ZERGIIORVDRA
 
-👨‍💻 Develoved by @Lunatic0de</b>
+👨‍💻 Develoved by @ZERGIIORVDRA</b>
 """
