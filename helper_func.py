@@ -9,6 +9,7 @@ import re
 from pyrogram import filters
 from pyrogram.errors import FloodWait
 from pyrogram.errors.exceptions.bad_request_400 import UserNotParticipant
+from pyrogram.enums import ChatMemberStatus
 
 from config import ADMINS, FORCE_SUB_CHANNEL1, FORCE_SUB_CHANNEL2, FORCE_SUB_CHANNEL3, FORCE_SUB_CHANNEL4
 
@@ -26,7 +27,7 @@ async def subschannelone(filter, client, update):
     except UserNotParticipant:
         return False
 
-    return member.status in ["creator", "administrator", "member"]
+    return member.status in [ChatMemberStatus.OWNER, ChatMemberStatus.ADMINISTRATOR, ChatMemberStatus.MEMBER]
 
 
 async def subschanneltwo(filter, client, update):
@@ -40,7 +41,7 @@ async def subschanneltwo(filter, client, update):
     except UserNotParticipant:
         return False
 
-    return member.status in ["creator", "administrator", "member"]
+    return member.status in [ChatMemberStatus.OWNER, ChatMemberStatus.ADMINISTRATOR, ChatMemberStatus.MEMBER]
 
 
 async def subschannelthree(filter, client, update):
@@ -54,7 +55,7 @@ async def subschannelthree(filter, client, update):
     except UserNotParticipant:
         return False
 
-    return member.status in ["creator", "administrator", "member"]
+    return member.status in [ChatMemberStatus.OWNER, ChatMemberStatus.ADMINISTRATOR, ChatMemberStatus.MEMBER]
 
 
 async def subschannelfour(filter, client, update):
@@ -68,7 +69,7 @@ async def subschannelfour(filter, client, update):
     except UserNotParticipant:
         return False
 
-    return member.status in ["creator", "administrator", "member"]
+    return member.status in [ChatMemberStatus.OWNER, ChatMemberStatus.ADMINISTRATOR, ChatMemberStatus.MEMBER]
 
 
 async def is_subscribed(filter, client, update):
@@ -106,7 +107,7 @@ async def is_subscribed(filter, client, update):
     except UserNotParticipant:
         return False
     
-    return member.status in ["creator", "administrator", "member"]
+    return member.status in [ChatMemberStatus.OWNER, ChatMemberStatus.ADMINISTRATOR, ChatMemberStatus.MEMBER]
 
 
 async def encode(string):
